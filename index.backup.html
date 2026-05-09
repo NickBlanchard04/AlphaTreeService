@@ -300,6 +300,86 @@
       margin-bottom: 10px;
     }
 
+    /* Firewood Section */
+    .firewood-section {
+      background: #0f1214; /* Dark sleek background to match screenshot */
+      color: #fff;
+      padding: 80px 0;
+    }
+
+    .firewood-section .section-head h2 {
+      color: #fff;
+    }
+
+    .firewood-section .section-head p {
+      color: #ccc;
+    }
+
+    .firewood-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .firewood-card {
+      background: #1a1e21; /* Slightly lighter dark card */
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: transform 0.3s ease;
+      padding-bottom: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    .firewood-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--primary);
+    }
+
+    .firewood-img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .firewood-card h3 {
+      font-size: 1.6rem;
+      font-weight: 900;
+      color: #fff;
+      margin-bottom: 20px;
+      padding: 0 15px;
+    }
+
+    .btn-price {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.05);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 12px 35px;
+      border-radius: 6px;
+      font-weight: 800;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: all 0.2s ease;
+    }
+
+    .btn-price:hover {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+    }
+
+    .firewood-cta {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+
     /* Funnel Stage 3: Desire (Reviews / Social Proof) */
     .reviews-section {
       background: var(--black-brand);
@@ -591,6 +671,39 @@
             <h3>Lot Clearing</h3>
             <p>Comprehensive clearing of trees and brush for residential and commercial development projects.</p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="firewood-section" id="firewood">
+      <div class="container">
+        <div class="section-head">
+          <h2>Premium Seasoned Hardwood</h2>
+          <p>Keep your home warm all winter. High-quality, seasoned hardwood split and ready to burn.</p>
+        </div>
+
+        <div class="firewood-grid">
+          <article class="firewood-card">
+            <img src="FullCord.png" alt="Full Cord of Seasoned Hardwood" class="firewood-img" />
+            <h3>Full Cord (Delivered)</h3>
+            <a href="tel:+15184510089" class="btn-price">$300</a>
+          </article>
+
+          <article class="firewood-card">
+            <img src="HalfCord.png" alt="Half Cord of Seasoned Hardwood" class="firewood-img" />
+            <h3>Half Cord</h3>
+            <a href="tel:+15184510089" class="btn-price">$175</a>
+          </article>
+
+          <article class="firewood-card">
+            <img src="FaceCord.png" alt="Face Cord of Seasoned Hardwood" class="firewood-img" />
+            <h3>Face Cord</h3>
+            <a href="tel:+15184510089" class="btn-price">$150</a>
+          </article>
+        </div>
+
+        <div class="firewood-cta">
+          <a class="btn btn-primary" href="tel:+15184510089">CALL OR TEXT TO SCHEDULE FIREWOOD DELIVERY</a>
         </div>
       </div>
     </section>
